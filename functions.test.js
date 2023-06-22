@@ -20,3 +20,7 @@ test("less than 160",()=>{
     const load2 = 700;
     expect(load1 + load2).toBeLessThan(1600);
 })
+
+test("There is no I in team",()=>{
+    expect('team').not.toMatch(/I/)
+})
