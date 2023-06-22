@@ -14,3 +14,9 @@ test("check if the user is John Uwimana Object",()=>{
         lastname:'Uwimana'
     });
 })
+
+test("less than 160",()=>{
+    const load1 = 800;
+    const load2 = 700;
+    expect(load1 + load2).toBeLessThan(1600);
+})
