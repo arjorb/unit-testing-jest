@@ -30,10 +30,8 @@ test("Check if the array contain the Admin",()=>{
     expect(usernames).toContain("Admin");
 })
 
-test("user fetched name should be Leanne Graham",()=>{
+test("user fetched name should be Leanne Graham", async()=>{
     expect.assertions(1);
-    return functions.fectUser().
-    then(data => {
-        expect(data.name).toEqual('Leanne Graham');
-    })
+    const data = await functions.fectUser();
+    expect(data.name).toEqual('Leanne Graham');
 })
