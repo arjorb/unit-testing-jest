@@ -24,3 +24,8 @@ test("less than 160",()=>{
 test("There is no I in team",()=>{
     expect('team').not.toMatch(/I/)
 })
+
+test("Check if the array contain the Admin",()=>{
+    usernames = ['Marry','Jane','John','Admin']
+    expect(usernames).toContain("Admin");
+})
