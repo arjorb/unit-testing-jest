@@ -1,5 +1,5 @@
-const reverseString = (str)=>{
-    str.split('').reverse().join('')
+const reverse = (str)=>{
+    return str.split('').reverse().join('')
 }
 
-module.exports = reverseString;
+module.exports = reverse;
